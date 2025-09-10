@@ -1,5 +1,5 @@
 # 💫 About Me:
-I'm Mrinal Satyarthi, passionate about DevOps and full-stack web development. I enjoy building efficient, scalable solutions and am eager to contribute to cloud automation and software industries. Constantly learning, I aim to solve real-world challenges and grow as a skilled developer while delivering innovative and reliable technology solutions.
+I'm Mrinal Satyarthi. I have a keen interest in DevOps and full-stack web development. <br>I'm excited to work in the field of cloud automation industry as well as the software industry.<br>
 
 
 ## 🌐 Socials:
