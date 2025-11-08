@@ -139,3 +139,22 @@ All colors MUST be HSL.
     @apply bg-gradient-to-br from-primary/20 to-secondary/20;
   }
 }
+
+html, body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+/* Hide scrollbar for inner panel */
+.about-panel {
+  scrollbar-width: none;
+}
+.about-panel::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}

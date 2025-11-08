@@ -8,6 +8,7 @@ import {
   Wrench,
   Trophy,
   Mail,
+  User,
 } from "lucide-react";
 
 type NavItem = {
@@ -19,6 +20,7 @@ type NavItem = {
 
 const navLinks: NavItem[] = [
   { id: "hero",         name: "Home",        href: "#hero",         Icon: Home },
+  { id: "about",       name: "About",      href: "#about",        Icon: User },
   { id: "experience",   name: "Experience",  href: "#experience",    Icon: BriefcaseBusiness },
   { id: "projects",     name: "Projects",    href: "#projects",      Icon: FolderGit2 },
   { id: "skills",       name: "Skills",      href: "#skills",        Icon: Wrench },

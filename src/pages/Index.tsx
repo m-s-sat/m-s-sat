@@ -7,6 +7,7 @@ import { Skills } from "@/components/Skills";
 import { Achievements } from "@/components/Achievements";
 import { Contact } from "@/components/Contact";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import AboutMe from "@/components/AboutMe";
 
 const Index = () => {
   const [showButton, setShowButton] = useState(false);
@@ -29,6 +30,7 @@ const Index = () => {
       <FloatingNavbar />
       <ThemeToggle />
       <HeroWithParticles />
+      <AboutMe />
       <Timeline />
       <Projects />
       <Skills />
