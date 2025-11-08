@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import type { Project } from "@/data/projects";
+import ReactMarkdown from "react-markdown";
 
 interface ProjectDetailModalProps {
   project: Project | null;
@@ -15,7 +16,7 @@ export const ProjectDetailModal = ({ project, open, onOpenChange }: ProjectDetai
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto glass">
+      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto glass scrollbar-hide">
         <DialogHeader>
           <DialogTitle className="text-3xl font-bold gradient-text">
             {project.title}
@@ -45,12 +46,12 @@ export const ProjectDetailModal = ({ project, open, onOpenChange }: ProjectDetai
 
             <div>
               <h3 className="text-xl font-bold mb-2 text-primary">Solution</h3>
-              <p className="text-muted-foreground">{project.solution}</p>
+              <p className="text-muted-foreground"><ReactMarkdown>{project.solution}</ReactMarkdown></p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold mb-2 text-primary">Architecture Overview</h3>
-              <p className="text-muted-foreground">{project.architecture}</p>
+              <p className="text-muted-foreground"><ReactMarkdown>{project.architecture}</ReactMarkdown></p>
             </div>
           </div>
 
