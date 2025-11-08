@@ -7,7 +7,7 @@ const achievements = [
     title: "2nd Runner-Up",
     event: "UPES CSA 4.0 Hackathon",
     year: "2024",
-    description: "Led team to develop innovative solution in 24-hour coding challenge"
+    description: "Built a real-time disaster response and management web platform"
   },
   {
     title: "9th Rank",
