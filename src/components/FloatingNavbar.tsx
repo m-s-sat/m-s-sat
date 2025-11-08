@@ -121,7 +121,7 @@ export const FloatingNavbar = () => {
             "bottom-[calc(env(safe-area-inset-bottom,0)+0.75rem)]"
           )}
         >
-          <div className="glass mx-auto w-[min(96%,560px)] rounded-2xl shadow-2xl px-3 py-2">
+          <div className="glass mx-auto w-[min(90%,560px)] rounded-2xl shadow-2xl px-1 py-2" id="floating-navbar">
             <ul className="flex items-center justify-between">
               {navLinks.map(({ id, name, href, Icon }) => {
                 const active = activeSection === id;
