@@ -25,7 +25,7 @@ export const ProjectDetailModal = ({ project, open, onOpenChange }: ProjectDetai
         <div className="space-y-6">
           <div className="relative h-64 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-9xl font-bold text-primary/10">{project.title.charAt(0)}</div>
+              <img className="text-9xl font-bold text-primary/10" alt={project.title} src={project.cover} />
             </div>
           </div>
 
