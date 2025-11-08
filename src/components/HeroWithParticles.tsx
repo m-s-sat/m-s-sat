@@ -117,10 +117,13 @@ export const HeroWithParticles = () => {
               size="lg"
               className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
               onClick={() => {
-                const link = document.createElement('a');
-                link.href = '#contact';
-                link.click();
-              }}
+              const link = document.createElement("a");
+              link.href = "/assets/m-s-sat.pdf";
+              link.download = "Mrinal_Satyarthi_Resume.pdf";
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
             >
               Download Resume
             </Button>
