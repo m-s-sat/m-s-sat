@@ -1,0 +1,77 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+build/
+
+# Local environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+vite-debug.log*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.log
+
+# Local testing cache
+.cache/
+.temp/
+coverage/
+*.pid
+
+# Vite specific cache
+.vite/
+
+# Optional: If using TypeScript
+*.tsbuildinfo
+
+# Optional: If using eslint / prettier
+.eslintcache
+.prettierignore
+
+# Optional: if using storybook
+.out/
+storybook-static/
+
+# Optional: If using Firebase or Netlify
+.firebase/
+.netlify/
+
+# Optional: If using yarn 2+
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
