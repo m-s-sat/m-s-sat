@@ -5,19 +5,47 @@ export interface SkillCategory {
 
 export const skillsData: SkillCategory[] = [
   {
-    category: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"]
+    category: "Frontend Development",
+    skills: [
+      "JavaScript",
+      "TypeScript",
+      "ReactJS",
+      "Next.js",
+      "Redux Toolkit",
+      "Tailwind CSS"
+    ]
   },
   {
-    category: "Backend",
-    skills: ["Node.js", "FastAPI", "Python", "MongoDB", "PostgreSQL"]
+    category: "Backend Development",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "FastAPI",
+      "Python",
+      "RESTful APIs",
+      "JWT Authentication"
+    ]
   },
   {
-    category: "DevOps",
-    skills: ["AWS", "Docker", "Kubernetes", "Terraform", "GitHub Actions"]
+    category: "DevOps & Cloud",
+    skills: [
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "GitHub Actions",
+      "Ansible"
+    ]
   },
   {
-    category: "Tools",
-    skills: ["Git", "VS Code", "Postman", "Figma", "Linear"]
+    category: "Tools & Platforms",
+    skills: [
+      "Git",
+      "GitHub",
+      "Jenkins",
+      "SonarQube",
+      "Netlify",
+      "Vercel"
+    ]
   }
 ];

@@ -17,52 +17,117 @@ export const projects: Project[] = [
   {
     slug: "medimitra",
     title: "MediMitra — AI-Powered Healthcare Platform",
-    short: "AI agent automates patient appointment scheduling with real-time updates.",
+    short:
+      "An AI-driven healthcare platform that automates patient appointment scheduling and backend management using intelligent agents.",
     year: "2025",
-    tech: ["React", "Node.js", "TypeScript", "MongoDB", "Docker", "AWS"],
-    cover: "/projects/medimitra-cover.jpg",
+    tech: [
+      "React.js",
+      "Node.js",
+      "TypeScript",
+      "MongoDB",
+      "WebSockets",
+      "Docker",
+      "AWS (EC2, ELB, ASG)"
+    ],
+    cover: "/projects/medimitra/cover.png",
     images: [
-      { src: "/projects/medimitra-1.jpg", alt: "Dashboard Overview" },
-      { src: "/projects/medimitra-2.jpg", alt: "Appointment Flow" }
+      { src: "/projects/medimitra/screen1.png", alt: "MediMitra dashboard interface" },
+      { src: "/projects/medimitra/screen2.png", alt: "AI-powered scheduling workflow" }
     ],
     repo: "https://github.com/m-s-sat/MediMitra",
     demo: "",
-    problem: "Healthcare facilities struggle with manual appointment scheduling, leading to patient dissatisfaction and administrative overhead.",
-    solution: "Built an AI-powered platform that automates appointment booking, sends real-time notifications, and integrates with existing healthcare systems.",
-    architecture: "React frontend with Node.js backend, MongoDB for data persistence, containerized with Docker and deployed on AWS EC2 with auto-scaling."
+    problem:
+      "Healthcare appointment systems often rely on manual scheduling, leading to inefficiencies, double-bookings, and poor patient experience. The challenge was to automate and intelligently manage this workflow with minimal human intervention.",
+    solution:
+      "Built an AI-powered appointment automation system that connects patients and hospitals through real-time event-driven microservices. Deployed the system on AWS EC2 using Dockerized containers with Elastic Load Balancing and Auto Scaling for high availability.",
+    architecture:
+      "Frontend built with React.js and TypeScript, communicating with Node.js and WebSocket-based services. Backend integrated with MongoDB for persistence and orchestrated via AWS EC2 Docker containers behind an ELB, ensuring reliability and horizontal scalability."
   },
   {
-    slug: "judix-platform",
-    title: "Judix — Legal Intelligence Platform",
-    short: "AI-powered legal research and document analysis system.",
+    slug: "gitops-cicd-iac",
+    title: "GitOps-Driven CI/CD with IaC Automation",
+    short:
+      "Implemented a complete GitOps pipeline using GitHub Workflows, Docker, Kubernetes, and Terraform for automated infrastructure provisioning and continuous deployment.",
     year: "2025",
-    tech: ["Next.js", "TypeScript", "FastAPI", "MongoDB", "AstraDB", "AWS"],
-    cover: "/projects/judix-cover.jpg",
-    images: [
-      { src: "/projects/judix-1.jpg", alt: "Legal Research Interface" },
-      { src: "/projects/judix-2.jpg", alt: "Document Analysis" }
+    tech: [
+      "GitHub Actions",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "AWS (EKS, ECR, VPC, Subnets)",
+      "Helm Charts",
+      "CI/CD",
+      "GitOps"
     ],
-    repo: "",
+    cover: "/projects/gitops/cover.png",
+    images: [
+      { src: "/projects/gitops/architecture1.png", alt: "Kubernetes multi-service GitOps deployment flow" },
+      { src: "/projects/gitops/architecture2.png", alt: "End-to-end CI/CD and IaC pipeline architecture with EKS, ECR, and Helm" }
+    ],
+    repo: "https://github.com/m-s-sat/MediMitra",
     demo: "",
-    problem: "Legal professionals spend hours researching case law and analyzing documents manually.",
-    solution: "Developed responsive Next.js + TypeScript UI components integrated with FastAPI backend, MongoDB and AstraDB for semantic search, with automated embeddings generation pipelines.",
-    architecture: "Microservices architecture with Next.js frontend, FastAPI backend services, vector database integration for semantic search, deployed on AWS EC2."
+    problem:
+      "Traditional CI/CD pipelines lacked synchronization between infrastructure provisioning and application deployment. Manual steps led to configuration drift, inconsistent environments, and delayed releases.",
+    solution:
+      "Designed and implemented a **GitOps-based CI/CD system** using GitHub Workflows, Docker, Kubernetes, and Terraform. The workflow automatically builds and pushes Docker images to AWS ECR, provisions AWS infrastructure via Terraform (EKS, VPC, Subnets), and deploys applications using Helm Charts within EKS clusters.",
+    architecture:
+      "The developer commits application and IaC code to separate repositories. GitHub Workflows trigger two pipelines: one for IaC (Terraform init → validate → plan → apply) and one for applications (test → build → dockerize → push to ECR → deploy with Helm). The EKS cluster pulls container images from ECR and exposes the app through an NGINX ingress in a secure, autoscaling environment."
   },
   {
-    slug: "devops-automation",
-    title: "Cloud Infrastructure Automation",
-    short: "Kubernetes-based deployment pipeline with CI/CD automation.",
-    year: "2024",
-    tech: ["Kubernetes", "Docker", "GitHub Actions", "Terraform", "AWS", "Python"],
-    cover: "/projects/devops-cover.jpg",
+    slug: "kubernetes-microservice-deployment",
+    title: "Kubernetes Microservice Deployment on AWS",
+    short:
+      "A secure, scalable microservice deployment architecture using Kubernetes and AWS with production-grade infrastructure setup.",
+    year: "2025",
+    tech: [
+      "Kubernetes",
+      "AWS (EC2, ASG, S3)",
+      "Docker",
+      "Nginx",
+      "Tomcat",
+      "YAML"
+    ],
+    cover: "/projects/kubernetes/cover.png",
     images: [
-      { src: "/projects/devops-1.jpg", alt: "Deployment Pipeline" },
-      { src: "/projects/devops-2.jpg", alt: "Monitoring Dashboard" }
+      { src: "/projects/kubernetes/screen1.png", alt: "Kubernetes cluster topology" },
+      { src: "/projects/kubernetes/screen2.png", alt: "Microservice deployment manifest" }
+    ],
+    repo: "https://github.com/m-s-sat/Kubernetes-Deployment.git",
+    demo: "",
+    problem:
+      "Deploying microservices manually on cloud servers leads to scaling challenges, configuration drift, and security vulnerabilities.",
+    solution:
+      "Implemented a production-grade Kubernetes-based deployment pipeline on AWS, defining modular manifests for deployments, services, volumes, and ingress controllers. Automated scaling and recovery using AWS Auto Scaling Groups.",
+    architecture:
+      "Each microservice containerized using Docker and deployed on a Kubernetes cluster running across multiple EC2 instances. Ingress controlled by Nginx with persistent storage via AWS S3 and service exposure handled through Kubernetes service objects."
+  },
+  {
+    slug: "cicd-automation-java",
+    title: "CI/CD Automation for Java Microservices",
+    short:
+      "Automated the continuous integration and deployment process for Java microservices using Jenkins, Maven, and SonarQube on AWS.",
+    year: "2025",
+    tech: [
+      "AWS (ECS, ECR)",
+      "Jenkins",
+      "Docker",
+      "Groovy",
+      "Maven",
+      "SonarQube",
+      "Git"
+    ],
+    cover: "/projects/cicd-java/cover.png",
+    images: [
+      { src: "/projects/cicd-java/screen1.png", alt: "Jenkins CI/CD pipeline execution view" },
+      { src: "/projects/cicd-java/screen2.png", alt: "SonarQube quality gate dashboard" }
     ],
     repo: "",
-    demo: "",
-    problem: "Manual deployment processes are error-prone and time-consuming for development teams.",
-    solution: "Created automated CI/CD pipeline with Kubernetes orchestration, infrastructure as code with Terraform, and comprehensive monitoring.",
-    architecture: "GitHub Actions for CI/CD, Terraform for infrastructure provisioning, Kubernetes clusters on AWS EKS for container orchestration, with Prometheus and Grafana for monitoring."
+    demo: "https://www.linkedin.com/feed/update/urn:li:activity:7346688957826445312/",
+    problem:
+      "Manual build and deployment processes for Java microservices caused delays and increased the risk of inconsistent environments and code quality issues.",
+    solution:
+      "Designed and implemented an automated CI/CD pipeline integrating Jenkins, Maven, and SonarQube for build automation, testing, and code quality checks. Integrated Docker for image builds and AWS ECS/ECR for container orchestration and deployment.",
+    architecture:
+      "The Jenkins pipeline (Groovy-based) triggers on commits, builds Docker images using Maven, pushes them to AWS ECR, and deploys to ECS clusters. SonarQube integration ensures continuous code quality validation before deployment."
   }
 ];
