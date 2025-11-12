@@ -5,7 +5,7 @@ import { ICONS } from "@/data/skills";
 export function Skills() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
-  const BASE_SPEED = 0.45; // pixels per frame — increase to speed up, decrease to slow down
+  const BASE_SPEED = 0.9; // pixels per frame — increase to speed up, decrease to slow down
 
   useEffect(() => {
     const container = containerRef.current;
