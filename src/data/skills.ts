@@ -49,3 +49,23 @@ export const skillsData: SkillCategory[] = [
     ]
   }
 ];
+
+export const ICONS = [
+  { name: "Ansible", src: "/icons/ansible.png" },
+  { name: "AWS", src: "/icons/aws.png" },
+  { name: "Docker", src: "/icons/docker.png" },
+  { name: "Express", src: "/icons/express.png" },
+  { name: "Git", src: "/icons/git.png" },
+  { name: "GitHub", src: "/icons/github.png" },
+  { name: "JavaScript", src: "/icons/javascript.png" },
+  { name: "Jenkins", src: "/icons/jenkins.png" },
+  { name: "Kubernetes", src: "/icons/kubernetes.png" },
+  { name: "Next.js", src: "/icons/next.png" },
+  { name: "Node.js", src: "/icons/node.png" },
+  { name: "Python", src: "/icons/python.png" },
+  { name: "React", src: "/icons/react.png" },
+  { name: "Redux", src: "/icons/redux.png" },
+  { name: "Tailwind CSS", src: "/icons/tailwind.png" },
+  { name: "Terraform", src: "/icons/terraform.png" },
+  { name: "TypeScript", src: "/icons/typescript.png" },
+];

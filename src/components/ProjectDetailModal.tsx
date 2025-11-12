@@ -16,7 +16,14 @@ export const ProjectDetailModal = ({ project, open, onOpenChange }: ProjectDetai
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto glass scrollbar-hide">
+      <DialogContent
+        className="
+    max-w-4xl max-h-[90vh] overflow-y-auto scrollbar-hide 
+    bg-white text-black
+    dark:glass dark:text-muted-foreground
+  "
+      >
+
         <DialogHeader>
           <DialogTitle className="text-3xl font-bold gradient-text">
             {project.title}
@@ -39,20 +46,15 @@ export const ProjectDetailModal = ({ project, open, onOpenChange }: ProjectDetai
           </div>
 
           <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-bold mb-2 text-primary">Problem Statement</h3>
-              <p className="text-muted-foreground">{project.problem}</p>
-            </div>
+            <h3 className="text-xl font-bold mb-2 text-primary dark:text-primary/90">Problem Statement</h3>
+            <p className="text-gray-800 dark:text-muted-foreground">{project.problem}</p>
 
-            <div>
-              <h3 className="text-xl font-bold mb-2 text-primary">Solution</h3>
-              <p className="text-muted-foreground"><ReactMarkdown>{project.solution}</ReactMarkdown></p>
-            </div>
+            <h3 className="text-xl font-bold mb-2 text-primary dark:text-primary/90">Solution</h3>
+            <p className="text-gray-800 dark:text-muted-foreground"><ReactMarkdown>{project.solution}</ReactMarkdown></p>
 
-            <div>
-              <h3 className="text-xl font-bold mb-2 text-primary">Architecture Overview</h3>
-              <p className="text-muted-foreground"><ReactMarkdown>{project.architecture}</ReactMarkdown></p>
-            </div>
+            <h3 className="text-xl font-bold mb-2 text-primary dark:text-primary/90">Architecture Overview</h3>
+            <p className="text-gray-800 dark:text-muted-foreground"><ReactMarkdown>{project.architecture}</ReactMarkdown></p>
+
           </div>
 
           <div className="flex gap-4 pt-4">

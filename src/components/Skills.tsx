@@ -1,37 +1,62 @@
-import { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { Badge } from "@/components/ui/badge";
-import { skillsData } from "@/data/skills";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+import { ICONS } from "@/data/skills";
 
-export const Skills = () => {
-  const [slidesToShow, setSlidesToShow] = useState(1);
+export function Skills() {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const trackRef = useRef<HTMLDivElement | null>(null);
+  const BASE_SPEED = 0.45; // pixels per frame — increase to speed up, decrease to slow down
 
   useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth >= 1024) {
-        setSlidesToShow(3);
-      } else if (window.innerWidth >= 768) {
-        setSlidesToShow(2);
-      } else {
-        setSlidesToShow(1);
+    const container = containerRef.current;
+    const track = trackRef.current;
+    if (!container || !track) return;
+
+    // Ensure track is at least twice the container width to allow smooth looping
+    const ensureTrackWideEnough = () => {
+      const minWidth = container.clientWidth * 2 + 10;
+      let clones = 0;
+      while (track.scrollWidth < minWidth && clones < 10) {
+        const nodes = Array.from(track.children).map((n) => n.cloneNode(true));
+        nodes.forEach((n) => track.appendChild(n));
+        clones += 1;
       }
     };
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    ensureTrackWideEnough();
+
+    let rafId: number | null = null;
+    const step = () => {
+      if (!container || !track) {
+        rafId = requestAnimationFrame(step);
+        return;
+      }
+
+      container.scrollLeft += BASE_SPEED;
+
+      const firstCopyWidth = track.scrollWidth / 2;
+      if (firstCopyWidth > 0 && container.scrollLeft >= firstCopyWidth) {
+        container.scrollLeft -= firstCopyWidth;
+      }
+
+      rafId = requestAnimationFrame(step);
+    };
+
+    if (rafId == null) rafId = requestAnimationFrame(step);
+    container.scrollLeft = 0;
+
+    // Re-check on resize to ensure enough content if viewport grows
+    const onResize = () => ensureTrackWideEnough();
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      if (rafId != null) cancelAnimationFrame(rafId);
+      window.removeEventListener("resize", onResize);
+    };
   }, []);
 
   return (
-    <section id="skills" className="py-20 md:py-32">
+    <section id="skills" className="py-12">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -41,79 +66,64 @@ export const Skills = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="gradient-text">Skills & Technologies</span>
+            <span className="gradient-text">Skills</span>
           </h2>
-          <p className="text-muted-foreground text-lg">
-            Tools and technologies I work with
-          </p>
         </motion.div>
 
-        <Carousel
-          opts={{
-            align: "start",
-            loop: true,
-          }}
-          plugins={[
-            Autoplay({
-              delay: 4000,
-            }),
-          ]}
-          className="w-full max-w-7xl mx-auto"
-        >
-          <CarouselContent>
-            {skillsData.map((category, categoryIndex) => (
-              <CarouselItem
-                key={category.category}
-                className={`${
-                  slidesToShow === 3
-                    ? "md:basis-1/2 lg:basis-1/3"
-                    : slidesToShow === 2
-                    ? "md:basis-1/2"
-                    : "basis-full"
-                }`}
-              >
-                <div className="p-2">
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
-                    viewport={{ once: true }}
-                    className="glass rounded-lg p-6 h-full"
-                  >
-                    <h3 className="text-xl font-bold mb-4 text-primary">
-                      {category.category}
-                    </h3>
-                    <div className="flex flex-col gap-3">
-                      {category.skills.map((skill, skillIndex) => (
-                        <motion.div
-                          key={skill}
-                          initial={{ opacity: 0, x: -20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ 
-                            duration: 0.3, 
-                            delay: categoryIndex * 0.1 + skillIndex * 0.05 
-                          }}
-                          viewport={{ once: true }}
-                          whileHover={{ x: 10 }}
-                        >
-                          <Badge 
-                            variant="secondary" 
-                            className="text-base py-2 px-4 font-mono cursor-default w-full justify-start"
-                          >
-                            {skill}
-                          </Badge>
-                        </motion.div>
-                      ))}
-                    </div>
-                  </motion.div>
+        <div className="relative overflow-hidden rounded-lg">
+          <div
+            ref={containerRef}
+            className="flex gap-6 items-center overflow-x-auto whitespace-nowrap scroll-smooth py-4 px-2 no-scrollbar"
+            style={{ WebkitOverflowScrolling: "touch", touchAction: "pan-x" }}
+            aria-label="Skills carousel — auto scrolling"
+            role="region"
+          >
+            <div ref={trackRef} className="flex items-center gap-6">
+              {[...ICONS].map((it, i) => (
+                <div
+                  key={`${it.name}-${i}`}
+                  className="flex items-center justify-center w-[100px] h-[100px] rounded-md flex-shrink-0"
+                  aria-label={it.name}
+                  title={it.name}
+                  role="img"
+                >
+                  <img
+                    src={it.src}
+                    alt={it.name}
+                    width={100}
+                    height={100}
+                    draggable={false}
+                    className="w-[100px] h-[100px] object-contain"
+                  />
                 </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious className="left-0" />
-          <CarouselNext className="right-0" />
-        </Carousel>
+              ))}
+
+              {/* initial duplicate set (script will clone more if needed) */}
+              {[...ICONS].map((it, i) => (
+                <div
+                  key={`${it.name}-dup-${i}`}
+                  className="flex items-center justify-center w-[100px] h-[100px] rounded-md flex-shrink-0"
+                  aria-hidden
+                >
+                  <img
+                    src={it.src}
+                    alt=""
+                    width={100}
+                    height={100}
+                    draggable={false}
+                    className="w-[100px] h-[100px] object-contain"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <style>{`
+            .no-scrollbar::-webkit-scrollbar { display: none; }
+            .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+          `}</style>
+        </div>
       </div>
     </section>
   );
-};
+}
