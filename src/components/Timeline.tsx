@@ -51,7 +51,7 @@ export const Timeline = () => {
     {
       title: "Software Developer Engineer",
       company: "Judix Technologies Pvt. Ltd.",
-      period: "May 2025 &ndash; Present",
+      period: "May 2025 - Present",
       description: [
         "Built secure authentication flows using Next.js and TypeScript, supporting session and token-based access.",
         "Designed clean, responsive user interfaces ensuring consistent behavior across devices and browsers.",
