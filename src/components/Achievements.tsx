@@ -16,10 +16,16 @@ const achievements = [
     description: "Built intelligent AI agent system among 500+ participants"
   },
   {
-    title: "Top 1.5%",
-    event: "JEE Advanced",
-    year: "2024",
-    description: "Secured position in top 1.5% nationally in competitive examination"
+  title: "Peak Rating 850",
+  event: "Codeforces Competitive Programming",
+  year: "2025",
+  description: "Attained a peak rating of 850 on Codeforces through active participation in programming contests"
+  },
+  {
+  title: "Auxiliary Member",
+  event: "Inter IIT Tech Meet 14.0",
+  year: "2025",
+  description: "Served as an auxiliary member of the Inter IIT Tech Meet team, supporting core participants in technical tasks and coordination"
   }
 ];
 
