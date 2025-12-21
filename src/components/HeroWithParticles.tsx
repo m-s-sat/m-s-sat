@@ -118,7 +118,7 @@ export const HeroWithParticles = () => {
               className="bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity"
               onClick={() => {
               const link = document.createElement("a");
-              link.href = "https://drive.google.com/drive/folders/1OqDY28-FhixPq2eO-yFUiqGl2uB80prG?dmr=1&ec=wgc-drive-hero-goto";
+              link.href = "/assets/m-s-sat.pdf";
               link.download = "Mrinal_Satyarthi_Resume.pdf";
               document.body.appendChild(link);
               link.click();
