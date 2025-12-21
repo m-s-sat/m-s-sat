@@ -50,13 +50,13 @@ export const Timeline = () => {
   const experiences = [
     {
       title: "Software Developer Engineer",
-      company: "Judix Pvt. Ltd.",
-      period: "May 2025 – Present",
+      company: "Judix Technologies Pvt. Ltd.",
+      period: "May 2025 &ndash; Present",
       description: [
-        "Developed responsive Next.js + TypeScript UI components for legal intelligence platform",
-        "Integrated FastAPI backend with MongoDB and AstraDB for semantic search capabilities",
-        "Automated embeddings generation pipelines deployed on AWS EC2",
-        "Implemented real-time data synchronization and optimized query performance"
+        "Built secure authentication flows using Next.js and TypeScript, supporting session and token-based access.",
+        "Designed clean, responsive user interfaces ensuring consistent behavior across devices and browsers.",
+        "Integrated front-end components with back-end APIs to enable reliable data flow and efficient state handling.",
+        "Configured Razorpay payment integration, managing subscription workflows, checkout flows, and payment status synchronization"
       ]
     }
   ];
