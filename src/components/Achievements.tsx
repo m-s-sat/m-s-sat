@@ -1,6 +1,16 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { FaTrophy } from "react-icons/fa";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "@/components/ui/carousel";
+import { useEffect, useRef, useState } from "react";
+import Autoplay from "embla-carousel-autoplay";
 
 const achievements = [
   {
@@ -16,24 +26,43 @@ const achievements = [
     description: "Built intelligent AI agent system among 500+ participants"
   },
   {
-  title: "Peak Rating 850",
-  event: "Codeforces Competitive Programming",
-  year: "2025",
-  description: "Attained a peak rating of 850 on Codeforces through active participation in programming contests"
+    title: "Peak Rating 850",
+    event: "Codeforces Competitive Programming",
+    year: "2025",
+    description: "Attained peak rating of 850 on Codeforces via active contests"
   },
   {
-  title: "Auxiliary Member",
-  event: "Inter IIT Tech Meet 14.0",
-  year: "2025",
-  description: "Served as an auxiliary member of the Inter IIT Tech Meet team, supporting core participants in technical tasks and coordination"
+    title: "Auxiliary Member",
+    event: "Inter IIT Tech Meet 14.0",
+    year: "2025",
+    description: "Supported core participants in technical tasks & coordination"
   }
 ];
 
 export const Achievements = () => {
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  const plugin = useRef(
+    Autoplay({ delay: 4000, stopOnInteraction: false, stopOnMouseEnter: true })
+  );
+
+  useEffect(() => {
+    if (!api) return;
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
   return (
     <section id="achievements" className="py-20 md:py-32 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-secondary/5 to-transparent pointer-events-none" />
-      
+
       <div className="container mx-auto px-4 relative">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -50,40 +79,70 @@ export const Achievements = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          {achievements.map((achievement, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-            >
-              <Card className="glass p-6 h-full flex flex-col items-center text-center group">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <FaTrophy className="w-8 h-8 text-primary-foreground" />
-                </div>
-                
-                <h3 className="text-xl font-bold mb-2 gradient-text">
-                  {achievement.title}
-                </h3>
-                
-                <p className="text-foreground font-semibold mb-1">
-                  {achievement.event}
-                </p>
-                
-                <p className="text-sm font-mono text-muted-foreground mb-3">
-                  {achievement.year}
-                </p>
-                
-                <p className="text-muted-foreground text-sm">
-                  {achievement.description}
-                </p>
-              </Card>
-            </motion.div>
-          ))}
-        </div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto"
+        >
+          <Carousel
+            setApi={setApi}
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[plugin.current]}
+            className="w-full"
+          >
+            <CarouselContent className="-ml-2 md:-ml-4">
+              {achievements.map((achievement, index) => (
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                  <div className="p-1 h-full">
+                    <Card className="glass p-6 h-full flex flex-col items-center text-center group hover:scale-[1.02] transition-transform duration-300">
+                      <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                        <FaTrophy className="w-8 h-8 text-primary-foreground" />
+                      </div>
+
+                      <h3 className="text-xl font-bold mb-2 gradient-text">
+                        {achievement.title}
+                      </h3>
+
+                      <p className="text-foreground font-semibold mb-1">
+                        {achievement.event}
+                      </p>
+
+                      <p className="text-sm font-mono text-muted-foreground mb-3">
+                        {achievement.year}
+                      </p>
+
+                      <p className="text-muted-foreground text-sm min-h-[3rem]">
+                        {achievement.description}
+                      </p>
+                    </Card>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="hidden md:flex -left-12 bg-background/80 hover:bg-background border-primary/20 hover:border-primary/50" />
+            <CarouselNext className="hidden md:flex -right-12 bg-background/80 hover:bg-background border-primary/20 hover:border-primary/50" />
+          </Carousel>
+
+          {/* Dot indicators */}
+          <div className="flex justify-center gap-2 mt-6">
+            {Array.from({ length: count }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => api?.scrollTo(index)}
+                className={`w-2 h-2 rounded-full transition-all duration-300 ${index === current
+                  ? "bg-primary w-6"
+                  : "bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                  }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
