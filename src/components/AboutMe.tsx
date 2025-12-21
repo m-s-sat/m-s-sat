@@ -147,7 +147,7 @@ const AboutMe: React.FC = () => {
             >
               <div ref={bodyRef} className="flex-1 overflow-y-auto about-panel">
                 <p className="about-stagger text-muted-foreground leading-relaxed mb-3 text-center md:text-left">
-                  I'm Mrinal Satyarthi, an enthusiastic tech enthusiast and developer who is enrolled at IIT Patna to pursue a B.Tech in Civil and Environmental Engineering. DevOps, scalable cloud deployment systems, and full-stack web development are my main areas of interest. On the front end, I like creating smooth user experiences, and on the back end, I like designing safe, automated, and efficient systems.
+                  I am a B.Tech undergraduate in Civil and Environmental Engineering at IIT Patna with strong interests in full-stack web development and cloud-based systems. I have hands-on experience with Next.js, Node.js, FastAPI, Docker, Kubernetes, and AWS, and I enjoy building reliable, production-ready applications. I also regularly practice C++ DSA to strengthen problem-solving skills, and focus on writing clean code, designing secure back-end systems, and understanding how development and deployment work together through automation and CI/CD pipelines.
                 </p>
                 {/* <p className="about-stagger text-muted-foreground leading-relaxed">
                   Outside of coding, I fine-tune portfolio visuals, accessibility, and animations
