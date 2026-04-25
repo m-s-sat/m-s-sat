@@ -86,6 +86,17 @@
 
 <br/>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg"/>
+  <img width="100%" alt="contribution snake"
+    src="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg"/>
+</picture>
+
+<br/>
+
 <!-- ── PROFILE VIEWS ──────────────────────────── -->
 
 <picture>
