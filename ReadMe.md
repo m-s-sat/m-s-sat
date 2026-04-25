@@ -23,14 +23,14 @@
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&bg_color=00000000&color=00c8ef&line=00c8ef&point=ffffff&area=true&area_color=00c8ef&hide_border=true&custom_title=Contribution%20Graph&title_color=00c8ef&radius=6"
+    srcset="https://github-readme-activity-graph.vercel.app/graph?username=m-s-sat&bg_color=00000000&color=00c8ef&line=00c8ef&point=ffffff&area=true&area_color=00c8ef&hide_border=true&custom_title=Contribution%20Graph&title_color=00c8ef&radius=6"
   />
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&bg_color=00000000&color=0077a8&line=0077a8&point=0077a8&area=true&area_color=0077a8&hide_border=true&custom_title=Contribution%20Graph&title_color=0077a8&radius=6"
+    srcset="https://github-readme-activity-graph.vercel.app/graph?username=m-s-sat&bg_color=00000000&color=0077a8&line=0077a8&point=0077a8&area=true&area_color=0077a8&hide_border=true&custom_title=Contribution%20Graph&title_color=0077a8&radius=6"
   />
   <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&bg_color=00000000&color=0077a8&line=0077a8&point=0077a8&area=true&area_color=0077a8&hide_border=true&custom_title=Contribution%20Graph&title_color=0077a8&radius=6"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=m-s-sat&bg_color=00000000&color=0077a8&line=0077a8&point=0077a8&area=true&area_color=0077a8&hide_border=true&custom_title=Contribution%20Graph&title_color=0077a8&radius=6"
     alt="Contribution Graph"
     width="100%"
   />
@@ -53,14 +53,14 @@
       <picture>
         <source
           media="(prefers-color-scheme: dark)"
-          srcset="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&hide_border=true&background=00000000&ring=00c8ef&fire=00c8ef&currStreakLabel=00c8ef&sideLabels=888888&dates=888888&currStreakNum=00c8ef&sideNums=00c8ef&border_radius=10"
+          srcset="https://github-readme-streak-stats.herokuapp.com/?user=m-s-sat&hide_border=true&background=00000000&ring=00c8ef&fire=00c8ef&currStreakLabel=00c8ef&sideLabels=888888&dates=888888&currStreakNum=00c8ef&sideNums=00c8ef&border_radius=10"
         />
         <source
           media="(prefers-color-scheme: light)"
-          srcset="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&hide_border=true&background=00000000&ring=0077a8&fire=0077a8&currStreakLabel=0077a8&sideLabels=555555&dates=555555&currStreakNum=0077a8&sideNums=0077a8&border_radius=10"
+          srcset="https://github-readme-streak-stats.herokuapp.com/?user=m-s-sat&hide_border=true&background=00000000&ring=0077a8&fire=0077a8&currStreakLabel=0077a8&sideLabels=555555&dates=555555&currStreakNum=0077a8&sideNums=0077a8&border_radius=10"
         />
         <img
-          src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&hide_border=true&background=00000000&ring=0077a8&fire=0077a8&currStreakLabel=0077a8&sideLabels=555555&dates=555555&currStreakNum=0077a8&sideNums=0077a8&border_radius=10"
+          src="https://github-readme-streak-stats.herokuapp.com/?user=m-s-sat&hide_border=true&background=00000000&ring=0077a8&fire=0077a8&currStreakLabel=0077a8&sideLabels=555555&dates=555555&currStreakNum=0077a8&sideNums=0077a8&border_radius=10"
           alt="Streak Stats"
         />
       </picture>
@@ -69,14 +69,14 @@
       <picture>
         <source
           media="(prefers-color-scheme: dark)"
-          srcset="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=false&hide_border=true&bg_color=00000000&title_color=00c8ef&text_color=aaaaaa&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
+          srcset="https://github-readme-stats.vercel.app/api?username=m-s-sat&show_icons=false&hide_border=true&bg_color=00000000&title_color=00c8ef&text_color=aaaaaa&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
         />
         <source
           media="(prefers-color-scheme: light)"
-          srcset="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=false&hide_border=true&bg_color=00000000&title_color=0077a8&text_color=555555&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
+          srcset="https://github-readme-stats.vercel.app/api?username=m-s-sat&show_icons=false&hide_border=true&bg_color=00000000&title_color=0077a8&text_color=555555&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
         />
         <img
-          src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=false&hide_border=true&bg_color=00000000&title_color=0077a8&text_color=555555&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
+          src="https://github-readme-stats.vercel.app/api?username=m-s-sat&show_icons=false&hide_border=true&bg_color=00000000&title_color=0077a8&text_color=555555&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
           alt="Stats"
         />
       </picture>
@@ -91,14 +91,14 @@
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://komarev.com/ghpvc/?username=YOUR_USERNAME&style=flat-square&color=00c8ef&label=profile+views&labelColor=transparent"
+    srcset="https://komarev.com/ghpvc/?username=m-s-sat&style=flat-square&color=00c8ef&label=profile+views&labelColor=transparent"
   />
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://komarev.com/ghpvc/?username=YOUR_USERNAME&style=flat-square&color=0077a8&label=profile+views&labelColor=transparent"
+    srcset="https://komarev.com/ghpvc/?username=m-s-sat&style=flat-square&color=0077a8&label=profile+views&labelColor=transparent"
   />
   <img
-    src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&style=flat-square&color=0077a8&label=profile+views&labelColor=transparent"
+    src="https://komarev.com/ghpvc/?username=m-s-sat&style=flat-square&color=0077a8&label=profile+views&labelColor=transparent"
     alt="Profile Views"
   />
 </picture>
