@@ -88,11 +88,11 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-dark.svg"/>
+    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-dark.svg?v=1"/>
   <source media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg"/>
+    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg?v=1"/>
   <img width="100%" alt="contribution snake"
-    src="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg"/>
+    src="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg?v=1"/>
 </picture>
 
 <br/>
