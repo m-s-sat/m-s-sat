@@ -1,18 +1,191 @@
-# 💫 About Me:
-I'm Mrinal Satyarthi, passionate about DevOps and full-stack web development. I enjoy building efficient, scalable solutions and am eager to contribute to cloud automation and software industries. Constantly learning, I aim to solve real-world challenges and grow as a skilled developer while delivering innovative and reliable technology solutions.
+<!--
+  ╔═══════════════════════════════════════════════╗
+  ║   REPLACE: YOUR_USERNAME → your GitHub handle ║
+  ╚═══════════════════════════════════════════════╝
+-->
 
+<div align="center">
 
-## 🌐 Socials:
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/mrinal-satyarthi) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:mrinalsatyarthi2005@gmail.com) 
+<!-- ── TITLE ─────────────────────────────────────── -->
 
-# 💻 Tech Stack:
-![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Nodemon](https://img.shields.io/badge/NODEMON-%23323330.svg?style=for-the-badge&logo=nodemon&logoColor=%BBDEAD) ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![EJS](https://img.shields.io/badge/ejs-%23B4CA65.svg?style=for-the-badge&logo=ejs&logoColor=black) ![JWT](https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white) ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white) ![Apache Tomcat](https://img.shields.io/badge/apache%20tomcat-%23F8DC75.svg?style=for-the-badge&logo=apache-tomcat&logoColor=black) ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![GitLab CI](https://img.shields.io/badge/gitlab%20CI-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white) ![Vue.js](https://img.shields.io/badge/vue.js-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D) ![Socket.io](https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Windows Terminal](https://img.shields.io/badge/Windows%20Terminal-%234D4D4D.svg?style=for-the-badge&logo=windows-terminal&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![React Hook Form](https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white) ![Bitbucket](https://img.shields.io/badge/bitbucket-%230047B3.svg?style=for-the-badge&logo=bitbucket&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![Vagrant](https://img.shields.io/badge/vagrant-%231563FF.svg?style=for-the-badge&logo=vagrant&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=m-s-sat&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=m-s-sat&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=m-s-sat&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<sub><code>m-s-sat / README.md</code></sub>
 
----
-[![](https://visitcount.itsvg.in/api?id=m-s-sat&icon=0&color=0)](https://visitcount.itsvg.in)
+<br/><br/>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<!-- ── CONTRIBUTION GRAPH ────────────────────────── -->
+<!--
+  <picture> swaps the entire image src based on GitHub's
+  color scheme — dark mode gets bright cyan dots/line,
+  light mode gets a deeper teal that's visible on white.
+  Both use bg_color=00000000 (transparent) so no box clash.
+-->
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://github-readme-activity-graph.vercel.app/graph?username=m-s-sat&bg_color=00000000&color=00c8ef&line=00c8ef&point=ffffff&area=true&area_color=00c8ef&hide_border=true&custom_title=Contribution%20Graph&title_color=00c8ef&radius=6"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://github-readme-activity-graph.vercel.app/graph?username=m-s-sat&bg_color=00000000&color=0077a8&line=0077a8&point=0077a8&area=true&area_color=0077a8&hide_border=true&custom_title=Contribution%20Graph&title_color=0077a8&radius=6"
+  />
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=m-s-sat&bg_color=00000000&color=0077a8&line=0077a8&point=0077a8&area=true&area_color=0077a8&hide_border=true&custom_title=Contribution%20Graph&title_color=0077a8&radius=6"
+    alt="Contribution Graph"
+    width="100%"
+  />
+</picture>
+
+<!-- ── DIVIDER ──────────────────────────────────── -->
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="80%" />
+
+<!-- ── STATS CARDS ─────────────────────────────── -->
+<!--
+  Same pattern: dark variant uses bright #00c8ef,
+  light variant uses deeper #0077a8 so dots/numbers
+  stay readable on GitHub's white background.
+-->
+
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="https://github-readme-streak-stats.herokuapp.com/?user=m-s-sat&hide_border=true&background=00000000&ring=00c8ef&fire=00c8ef&currStreakLabel=00c8ef&sideLabels=888888&dates=888888&currStreakNum=00c8ef&sideNums=00c8ef&border_radius=10"
+        />
+        <source
+          media="(prefers-color-scheme: light)"
+          srcset="https://github-readme-streak-stats.herokuapp.com/?user=m-s-sat&hide_border=true&background=00000000&ring=0077a8&fire=0077a8&currStreakLabel=0077a8&sideLabels=555555&dates=555555&currStreakNum=0077a8&sideNums=0077a8&border_radius=10"
+        />
+        <img
+          src="https://github-readme-streak-stats.herokuapp.com/?user=m-s-sat&hide_border=true&background=00000000&ring=0077a8&fire=0077a8&currStreakLabel=0077a8&sideLabels=555555&dates=555555&currStreakNum=0077a8&sideNums=0077a8&border_radius=10"
+          alt="Streak Stats"
+        />
+      </picture>
+    </td>
+    <td align="center">
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="https://github-readme-stats.vercel.app/api?username=m-s-sat&show_icons=false&hide_border=true&bg_color=00000000&title_color=00c8ef&text_color=aaaaaa&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
+        />
+        <source
+          media="(prefers-color-scheme: light)"
+          srcset="https://github-readme-stats.vercel.app/api?username=m-s-sat&show_icons=false&hide_border=true&bg_color=00000000&title_color=0077a8&text_color=555555&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=m-s-sat&show_icons=false&hide_border=true&bg_color=00000000&title_color=0077a8&text_color=555555&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
+          alt="Stats"
+        />
+      </picture>
+    </td>
+  </tr>
+</table>
+
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-dark.svg?v=1"/>
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg?v=1"/>
+  <img width="100%" alt="contribution snake"
+    src="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg?v=1"/>
+</picture>
+
+<br/>
+
+<!-- ── PROFILE VIEWS ──────────────────────────── -->
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://komarev.com/ghpvc/?username=m-s-sat&style=flat-square&color=00c8ef&label=profile+views&labelColor=transparent"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://komarev.com/ghpvc/?username=m-s-sat&style=flat-square&color=0077a8&label=profile+views&labelColor=transparent"
+  />
+  <img
+    src="https://komarev.com/ghpvc/?username=m-s-sat&style=flat-square&color=0077a8&label=profile+views&labelColor=transparent"
+    alt="Profile Views"
+  />
+</picture>
+
+<br/><br/>
+
+</div>
+
+<!--
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  HOW THE LIGHT / DARK ADAPTATION WORKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Every widget is wrapped in a <picture> element with
+  two <source> tags:
+
+    - (prefers-color-scheme: dark)
+        accent = #00c8ef  (bright electric cyan)
+        dots/points = #ffffff (white — pops on dark bg)
+        muted text = #888888
+
+    - (prefers-color-scheme: light)
+        accent = #0077a8  (deeper teal — visible on white)
+        dots/points = #0077a8 (same teal, not washed out)
+        muted text = #555555
+
+  All backgrounds stay bg_color=00000000 (transparent)
+  so GitHub's own page color always shows through.
+  GitHub reads the user's OS/browser theme preference
+  and picks the correct <source> automatically.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SETUP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Create a public repo named exactly YOUR_USERNAME
+  2. Replace every YOUR_USERNAME with your real handle
+  3. Push README.md — GitHub renders it on your profile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  OPTIONAL — SNAKE ANIMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Create .github/workflows/snake.yml:
+
+    name: Snake
+    on:
+      schedule:
+        - cron: "0 */12 * * *"
+      workflow_dispatch:
+    jobs:
+      generate:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: Platane/snk/svg-only@v3
+            with:
+              github_user_name: ${{ github.repository_owner }}
+              outputs: |
+                dist/snake-dark.svg?palette=github-dark
+                dist/snake-light.svg?palette=github-light
+          - uses: crazy-max/ghaction-github-pages@v3
+            with:
+              target_branch: output
+              build_dir: dist
+            env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  Then paste above the profile views badge:
+
+    <picture>
+      <source media="(prefers-color-scheme: dark)"
+        srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/snake-dark.svg"/>
+      <source media="(prefers-color-scheme: light)"
+        srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/snake-light.svg"/>
+      <img width="100%" alt="contribution snake"
+        src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/snake-light.svg"/>
+    </picture>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+-->
