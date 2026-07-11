@@ -49,14 +49,22 @@ const TimelineItem = ({ title, company, period, description, index }: TimelineIt
 export const Timeline = () => {
   const experiences = [
     {
-      title: "Software Developer Engineer",
-      company: "Judix Technologies Pvt. Ltd.",
-      period: "May 2025 - Present",
+      title: "Software Engineer",
+      company: "Judix Technologies Pvt. Ltd",
+      period: "May 2025 - July 2025 (Intern)",
       description: [
-        "Built secure authentication flows using Next.js and TypeScript, supporting session and token-based access.",
-        "Designed clean, responsive user interfaces ensuring consistent behavior across devices and browsers.",
-        "Integrated front-end components with back-end APIs to enable reliable data flow and efficient state handling.",
-        "Configured Razorpay payment integration, managing subscription workflows, checkout flows, and payment status synchronization"
+        "Developed and enhanced the Judix landing page, created a responsive interface with clean and user-friendly design.",
+        "Assisted in debugging the RAG system and supported frontend-backend integration through API communication."
+      ]
+    },
+    {
+      title: "Software Engineer",
+      company: "Judix Technologies Pvt. Ltd.",
+      period: "Aug 2025 - Present (Full Time)",
+      description: [
+        "Developed JUDIX's core AI to instantly answer legal queries using cited Supreme Court cases",
+        "Built the Node.js API that handles user authentication, subscriptions, and live AI search queries",
+        "Integrated the React frontend with backend APIs to stream live AI responses and display legal data."
       ]
     }
   ];

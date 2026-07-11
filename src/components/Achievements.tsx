@@ -26,12 +26,6 @@ const achievements = [
     description: "Built intelligent AI agent system among 500+ participants"
   },
   {
-    title: "Peak Rating 850",
-    event: "Codeforces Competitive Programming",
-    year: "2025",
-    description: "Attained peak rating of 850 on Codeforces via active contests"
-  },
-  {
     title: "Auxiliary Member",
     event: "Inter IIT Tech Meet 14.0",
     year: "2025",

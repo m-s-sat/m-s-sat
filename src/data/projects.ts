@@ -15,33 +15,63 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    slug: "medimitra",
-    title: "MediMitra — AI-Powered Healthcare Platform",
+    slug: "rapid-crisis",
+    title: "Rapid Crisis",
     short:
-      "An AI-driven healthcare platform that automates patient appointment scheduling and backend management using intelligent agents.",
-    year: "2025",
+      "An IoT-powered crisis detection and emergency notification system for the hospitality industry.",
+    year: "2026",
     tech: [
-      "React.js",
       "Node.js",
       "TypeScript",
       "MongoDB",
-      "WebSockets",
+      "Express.js",
+      "Redis",
       "Docker",
-      "AWS (EC2, ELB, ASG)"
     ],
-    cover: "/projects/medimitra/cover.png",
+    cover: "/projects/rapid-crisis/cover.png",
     images: [
-      { src: "/projects/medimitra/screen1.png", alt: "MediMitra dashboard interface" },
-      { src: "/projects/medimitra/screen2.png", alt: "AI-powered scheduling workflow" }
+      {
+        src: "/projects/rapid-crisis/cover.png",
+        alt: "Rapid Crisis Dashboard",
+      }
     ],
-    repo: "https://github.com/m-s-sat/MediMitra",
-    demo: "",
+    repo: "https://github.com/m-s-sat/rapid-crisis",
+    // demo: "https://your-demo-link.com",
     problem:
-      "Healthcare appointment systems often rely on manual scheduling, leading to inefficiencies, double-bookings, and poor patient experience. The challenge was to automate and intelligently manage this workflow with minimal human intervention.",
+      "Hospitality businesses require immediate detection of emergencies such as LPG gas leaks, fires, and earthquakes to minimize damage and ensure occupant safety.",
     solution:
-      "Built an AI-powered appointment automation system that connects patients and hospitals through real-time event-driven microservices. Deployed the system on AWS EC2 using Dockerized containers with Elastic Load Balancing and Auto Scaling for high availability.",
+      "Built an event-driven backend that receives IoT sensor data, stores it in MongoDB, processes it through worker services, detects crises, and automatically notifies nearby occupants and emergency response teams through an asynchronous messaging pipeline.",
     architecture:
-      "Frontend built with React.js and TypeScript, communicating with Node.js and WebSocket-based services. Backend integrated with MongoDB for persistence and orchestrated via AWS EC2 Docker containers behind an ELB, ensuring reliability and horizontal scalability."
+      "ESP32 sensors send telemetry to a Node.js API. The API stores events in MongoDB and forwards them to worker services. Workers analyze incoming data and publish confirmed emergencies to a message queue, which dispatches notifications to users and crisis response teams. The current setup uses simulated sensor data for testing before deployment with physical devices.",
+  },
+  {
+    slug: "osm-route-planner",
+    title: "OSM Route Planning Engine",
+    short:
+      "A high-performance shortest-path engine built using OpenStreetMap data and Dijkstra's algorithm.",
+    year: "2026",
+    tech: [
+      "C++",
+      "OpenStreetMap",
+      "Dijkstra Algorithm",
+      "Graph Algorithms",
+      "STL",
+    ],
+    cover: "/projects/map/cover.png",
+    images: [
+      {
+        src: "/projects/map/cover.png",
+        alt: "OpenStreetMap Visualization",
+      },
+    ],
+    repo: "https://github.com/m-s-sat/map",
+    // demo: "https://your-demo-link.com",
+    problem:
+      "Finding the shortest route over large-scale road networks requires efficient graph construction and memory management when processing millions of OpenStreetMap records.",
+    solution:
+      "Parsed over 18 million OpenStreetMap records, constructed a graph from latitude and longitude coordinates, and implemented Dijkstra's algorithm to compute the shortest path between two locations. Optimized memory usage from approximately 1.5 GB to around 800 MB for improved performance.",
+    architecture:
+      "OpenStreetMap data is parsed into graph nodes and edges. Latitude and longitude coordinates are converted into an adjacency list representation. The routing engine executes Dijkstra's algorithm to compute the optimal path and returns the route for visualization. Deployment is currently pending due to the memory requirements exceeding most free-tier cloud instances.",
   },
   {
     slug: "gitops-cicd-iac",
