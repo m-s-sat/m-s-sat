@@ -1,36 +1,191 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<!--
+  ╔═══════════════════════════════════════════════╗
+  ║   REPLACE: YOUR_USERNAME → your GitHub handle ║
+  ╚═══════════════════════════════════════════════╝
+-->
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+<!-- ── TITLE ─────────────────────────────────────── -->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<sub><code>m-s-sat / README.md</code></sub>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br/><br/>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<!-- ── CONTRIBUTION GRAPH ────────────────────────── -->
+<!--
+  <picture> swaps the entire image src based on GitHub's
+  color scheme — dark mode gets bright cyan dots/line,
+  light mode gets a deeper teal that's visible on white.
+  Both use bg_color=00000000 (transparent) so no box clash.
+-->
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://github-readme-activity-graph.vercel.app/graph?username=m-s-sat&bg_color=00000000&color=00c8ef&line=00c8ef&point=ffffff&area=true&area_color=00c8ef&hide_border=true&custom_title=Contribution%20Graph&title_color=00c8ef&radius=6"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://github-readme-activity-graph.vercel.app/graph?username=m-s-sat&bg_color=00000000&color=0077a8&line=0077a8&point=0077a8&area=true&area_color=0077a8&hide_border=true&custom_title=Contribution%20Graph&title_color=0077a8&radius=6"
+  />
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=m-s-sat&bg_color=00000000&color=0077a8&line=0077a8&point=0077a8&area=true&area_color=0077a8&hide_border=true&custom_title=Contribution%20Graph&title_color=0077a8&radius=6"
+    alt="Contribution Graph"
+    width="100%"
+  />
+</picture>
 
-## Learn More
+<!-- ── DIVIDER ──────────────────────────────────── -->
 
-To learn more about Next.js, take a look at the following resources:
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="80%" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- ── STATS CARDS ─────────────────────────────── -->
+<!--
+  Same pattern: dark variant uses bright #00c8ef,
+  light variant uses deeper #0077a8 so dots/numbers
+  stay readable on GitHub's white background.
+-->
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center">
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="https://github-readme-streak-stats.herokuapp.com/?user=m-s-sat&hide_border=true&background=00000000&ring=00c8ef&fire=00c8ef&currStreakLabel=00c8ef&sideLabels=888888&dates=888888&currStreakNum=00c8ef&sideNums=00c8ef&border_radius=10"
+        />
+        <source
+          media="(prefers-color-scheme: light)"
+          srcset="https://github-readme-streak-stats.herokuapp.com/?user=m-s-sat&hide_border=true&background=00000000&ring=0077a8&fire=0077a8&currStreakLabel=0077a8&sideLabels=555555&dates=555555&currStreakNum=0077a8&sideNums=0077a8&border_radius=10"
+        />
+        <img
+          src="https://github-readme-streak-stats.herokuapp.com/?user=m-s-sat&hide_border=true&background=00000000&ring=0077a8&fire=0077a8&currStreakLabel=0077a8&sideLabels=555555&dates=555555&currStreakNum=0077a8&sideNums=0077a8&border_radius=10"
+          alt="Streak Stats"
+        />
+      </picture>
+    </td>
+    <td align="center">
+      <picture>
+        <source
+          media="(prefers-color-scheme: dark)"
+          srcset="https://github-readme-stats.vercel.app/api?username=m-s-sat&show_icons=false&hide_border=true&bg_color=00000000&title_color=00c8ef&text_color=aaaaaa&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
+        />
+        <source
+          media="(prefers-color-scheme: light)"
+          srcset="https://github-readme-stats.vercel.app/api?username=m-s-sat&show_icons=false&hide_border=true&bg_color=00000000&title_color=0077a8&text_color=555555&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
+        />
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=m-s-sat&show_icons=false&hide_border=true&bg_color=00000000&title_color=0077a8&text_color=555555&count_private=true&hide=stars,prs,issues&hide_rank=true&custom_title=Contributions&border_radius=10"
+          alt="Stats"
+        />
+      </picture>
+    </td>
+  </tr>
+</table>
 
-## Deploy on Vercel
+<br/>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<picture>
+  <source media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-dark.svg?v=1"/>
+  <source media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg?v=1"/>
+  <img width="100%" alt="contribution snake"
+    src="https://raw.githubusercontent.com/m-s-sat/m-s-sat/output/snake-light.svg?v=1"/>
+</picture>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<br/>
+
+<!-- ── PROFILE VIEWS ──────────────────────────── -->
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://komarev.com/ghpvc/?username=m-s-sat&style=flat-square&color=00c8ef&label=profile+views&labelColor=transparent"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://komarev.com/ghpvc/?username=m-s-sat&style=flat-square&color=0077a8&label=profile+views&labelColor=transparent"
+  />
+  <img
+    src="https://komarev.com/ghpvc/?username=m-s-sat&style=flat-square&color=0077a8&label=profile+views&labelColor=transparent"
+    alt="Profile Views"
+  />
+</picture>
+
+<br/><br/>
+
+</div>
+
+<!--
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  HOW THE LIGHT / DARK ADAPTATION WORKS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Every widget is wrapped in a <picture> element with
+  two <source> tags:
+
+    - (prefers-color-scheme: dark)
+        accent = #00c8ef  (bright electric cyan)
+        dots/points = #ffffff (white — pops on dark bg)
+        muted text = #888888
+
+    - (prefers-color-scheme: light)
+        accent = #0077a8  (deeper teal — visible on white)
+        dots/points = #0077a8 (same teal, not washed out)
+        muted text = #555555
+
+  All backgrounds stay bg_color=00000000 (transparent)
+  so GitHub's own page color always shows through.
+  GitHub reads the user's OS/browser theme preference
+  and picks the correct <source> automatically.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SETUP
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  1. Create a public repo named exactly YOUR_USERNAME
+  2. Replace every YOUR_USERNAME with your real handle
+  3. Push README.md — GitHub renders it on your profile
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  OPTIONAL — SNAKE ANIMATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Create .github/workflows/snake.yml:
+
+    name: Snake
+    on:
+      schedule:
+        - cron: "0 */12 * * *"
+      workflow_dispatch:
+    jobs:
+      generate:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: Platane/snk/svg-only@v3
+            with:
+              github_user_name: ${{ github.repository_owner }}
+              outputs: |
+                dist/snake-dark.svg?palette=github-dark
+                dist/snake-light.svg?palette=github-light
+          - uses: crazy-max/ghaction-github-pages@v3
+            with:
+              target_branch: output
+              build_dir: dist
+            env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  Then paste above the profile views badge:
+
+    <picture>
+      <source media="(prefers-color-scheme: dark)"
+        srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/snake-dark.svg"/>
+      <source media="(prefers-color-scheme: light)"
+        srcset="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/snake-light.svg"/>
+      <img width="100%" alt="contribution snake"
+        src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/snake-light.svg"/>
+    </picture>
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+-->
