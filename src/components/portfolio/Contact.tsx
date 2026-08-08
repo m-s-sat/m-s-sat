@@ -57,7 +57,7 @@ export default function Contact() {
               target="_blank"
               className="items-center whitespace-nowrap rounded-full bg-acc px-[26px] py-[15px] text-[13px] tracking-[.03em] text-cream hover:text-cream"
             >
-              Download résumé ↓
+              View résumé ↗
             </Magnetic>
           </div>
         </div>

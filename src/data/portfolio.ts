@@ -196,5 +196,5 @@ export const contactInfo = {
   altEmail: 'mrinal_2401ce60@iitp.ac.in',
   github: 'https://github.com/m-s-sat',
   linkedin: 'https://www.linkedin.com/in/mrinal-satyarthi/',
-  resume: '/resume.pdf',
+  resume: '/resume',
 };

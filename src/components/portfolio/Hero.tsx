@@ -1,6 +1,6 @@
 import Magnetic from './Magnetic';
 import SpinSeal from './SpinSeal';
-import { heroStats } from '@/data/portfolio';
+import { heroStats, contactInfo } from '@/data/portfolio';
 
 export default function Hero() {
   return (
@@ -58,7 +58,7 @@ export default function Hero() {
               View selected work <span className="text-[15px]">↓</span>
             </Magnetic>
             <Magnetic
-              href="/resume.pdf"
+              href={contactInfo.resume}
               target="_blank"
               className="items-center gap-3 whitespace-nowrap rounded-full border border-ink/18 px-[26px] py-4 text-[13.5px] tracking-[.02em]"
             >
