@@ -32,7 +32,7 @@
 
 <!-- ── DIVIDER ──────────────────────────────────── -->
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="80%" />
+<!-- <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/aqua.png" width="80%" /> -->
 
 <!-- ── STATS CARDS ─────────────────────────────── -->
 <!--
